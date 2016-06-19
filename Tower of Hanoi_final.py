@@ -1,3 +1,5 @@
+"""  """
+
 def moves(a,b,c,num):
     if num==1:
         print a,c
@@ -11,7 +13,7 @@ def moves(a,b,c,num):
 def countOfMoves(num):
     count=0
     for k in range(num):
-        count+=count+1
+        count = count*2+1
     return count
 
 

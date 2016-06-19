@@ -19,12 +19,11 @@ def partition(alist):
                 alist[0], alist[rightmark]=alist[rightmark], pivot
                 print alist
 
-                leftside=alist[:rightmark]
-                rightside=alist[rightmark+1:]
+                
                 
 
-                partition(leftside)
-                partition(rightside)
+                partition(alist[:rightmark])
+                partition(alist[rightmark+1:])
 
             
                 return alist
